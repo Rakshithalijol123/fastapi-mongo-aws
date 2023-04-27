@@ -3,7 +3,8 @@ from .connection import (
     create_database
 )
 
-client = connect("mongodb://localhost:27017")
+client = connect(
+    "mongodb+srv://rakshithalijol:Rakshithalijol123@cluster0.xuaevf5.mongodb.net/test")
 db = create_database(client=client, db_name="TEST-DATABASE")
 
 
